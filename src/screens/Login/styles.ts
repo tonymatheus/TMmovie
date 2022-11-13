@@ -42,20 +42,6 @@ export const Input = styled.TextInput`
   font-size: 16px;
   color: #000;
 `;
-export const ViewButton = styled.TouchableOpacity`
-  width: 100%;
-  height: 49px;
-  background-color: #e52246;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-top: 5px;
-`;
-
-export const ButtonTitle = styled.Text`
-  color: #fff;
-  font-weight: bold;
-`;
 
 export const ViewRegister = styled.View`
   margin-top: 10px;

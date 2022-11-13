@@ -1,3 +1,4 @@
+import {Button} from '@components/Button';
 import React, {useState} from 'react';
 
 import {
@@ -7,8 +8,6 @@ import {
   HeaderTitle,
   InputView,
   Input,
-  ViewButton,
-  ButtonTitle,
   ViewRegister,
   Link,
   LinkTitle,
@@ -46,9 +45,7 @@ export const Login = () => {
               value={password}
               onChange={text => setPassword(text)}
             />
-            <ViewButton>
-              <ButtonTitle>Login</ButtonTitle>
-            </ViewButton>
+            <Button title="Login" onPress={() => {}} />
             <ViewRegister>
               <Link onPress={toggleLogin}>
                 <LinkTitle>Ainda não tem uma conta? cadastrar</LinkTitle>
@@ -84,9 +81,7 @@ export const Login = () => {
             value={passwordRegister}
             onChange={text => setPasswordRegister(text)}
           />
-          <ViewButton onPress={toggleLogin}>
-            <ButtonTitle>Cadastrar</ButtonTitle>
-          </ViewButton>
+          <Button title="Cadastrar" onPress={toggleLogin} />
         </InputView>
       </ViewForm>
     </Container>
