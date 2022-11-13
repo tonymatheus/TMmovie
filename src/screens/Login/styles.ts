@@ -22,7 +22,7 @@ export const Header = styled.View`
 export const HeaderTitle = styled.Text<Props>`
   color: #fff;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   margin-right: 1px;
 `;
 export const InputView = styled.KeyboardAvoidingView`

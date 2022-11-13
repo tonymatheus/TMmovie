@@ -17,12 +17,39 @@ export const Login = () => {
   const [login, setLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [name, setName] = useState();
+  const [name, setName] = useState('');
   const [emailRegister, setEmailRegister] = useState('');
   const [passwordRegister, setPasswordRegister] = useState('');
 
   const toggleLogin = () => {
     setLogin(!login);
+    setEmail('');
+    setName('');
+    setEmailRegister('');
+    setPassword('');
+    setPasswordRegister('');
+  };
+
+  const validateLoginFields = () => {
+    if (email === '' || password === '') {
+      console.log('Preencha todos os campos');
+    }
+  };
+
+  const validateRegisterFields = () => {
+    if (emailRegister === '' || passwordRegister === '' || name === '') {
+      console.log('Preencha os campos de cadastro');
+      return;
+    }
+  };
+
+  const handleLogin = () => {
+    validateLoginFields();
+  };
+
+  const handleSignUp = () => {
+    setLogin(!login);
+    validateRegisterFields();
   };
 
   if (login) {
@@ -45,7 +72,7 @@ export const Login = () => {
               value={password}
               onChange={text => setPassword(text)}
             />
-            <Button title="Login" onPress={() => {}} />
+            <Button title="Login" onPress={handleLogin} />
             <ViewRegister>
               <Link onPress={toggleLogin}>
                 <LinkTitle>Ainda não tem uma conta? cadastrar</LinkTitle>
@@ -81,7 +108,7 @@ export const Login = () => {
             value={passwordRegister}
             onChange={text => setPasswordRegister(text)}
           />
-          <Button title="Cadastrar" onPress={toggleLogin} />
+          <Button title="Cadastrar" onPress={handleSignUp} />
         </InputView>
       </ViewForm>
     </Container>
