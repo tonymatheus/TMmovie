@@ -59,11 +59,11 @@ yarn install ou somente yarn
 
 # Tecnologias utilizadas no projeto 
 
-- [x]React-Native
-- [x]Typescript
-- [x]React-Hooks
-- [X]Firebase Auth e Storage 
-- [x]Styled-components
-- [x]Axios
-- [x]The MovieDB-API
-- [x]AsyncStorage
+- [x] React-native
+- [x] Typescript
+- [x] React-Hooks
+- [x] The movieDB Api
+- [x] Ract-Navigation
+- [x] Styled-Components
+- [x] AsyncStorage
+- [x] Firebase
