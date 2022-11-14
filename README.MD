@@ -19,7 +19,7 @@ Essa aplicação tem como objetivo possibilitar ao usuário a possibilidade de v
 Primeiramente clone o repositório com o comando:
 
 ```bash
- git clone ....
+ git clone https://github.com/tonymatheus/TMmovie 
 ```
 
 Após clonar o projeto rode o seguinte comando no seu terminal:
